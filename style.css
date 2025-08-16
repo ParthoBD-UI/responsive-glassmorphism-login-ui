@@ -9,7 +9,7 @@
 
 body {
     /* সরাসরি ইন্টারনেট থেকে ব্যাকগ্রাউন্ড ইমেজ লোড করা হচ্ছে */
-    background-image: url('BG.jpg'); 
+    background-image: url('BG.webp'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,4 +189,5 @@ h2 {
 
 .login-link a:hover {
     text-decoration: underline;
+
 }
