@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form | Partho UIX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">PARTHO UIX</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="login-button">Login</a>
+    </header>
+
+    <main class="main-content">
+        <div class="registration-container">
+            <form action="#" class="registration-form">
+                <button type="button" class="close-btn">&times;</button>
+                <h2>Registration</h2>
+                
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                
+                <div class="terms-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the terms & conditions</label>
+                </div>
+                
+                <button type="submit" class="register-btn">Register</button>
+                
+                <p class="login-link">
+                    Already have an account? <a href="#">Login</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* সরাসরি ইন্টারনেট থেকে ব্যাকগ্রাউন্ড ইমেজ লোড করা হচ্ছে */
+    background-image: url('BG.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links {
+    /* শুধু এই একটি লাইন যোগ করুন 👇 */
+    margin-left: 200px;
+    margin-bottom: 10px; /* বাম দিক থেকে ১০০ পিক্সেল ফাঁকা জায়গা তৈরি করবে */
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.login-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 25px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration-container {
+    position: relative;
+}
+
+.registration-form {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px 12px 40px; 
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #ccc;
+}
+
+.terms-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.terms-group input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #8A2BE2; /* Modern way to color checkboxes */
+    width: 15px;
+    height: 15px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #8A2BE2; 
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #9932CC; 
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
